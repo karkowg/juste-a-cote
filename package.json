@@ -18,6 +18,9 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0-0",
+    "ky": "^0.5.1",
+    "tailwindcss": "^0.7.2",
+    "vue-carousel": "^0.16.1",
     "vue-template-compiler": "^2.5.17"
   }
 }
