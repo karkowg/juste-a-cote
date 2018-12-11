@@ -18,17 +18,28 @@ function mergeClientParams(searchParams) {
   return searchParams;
 }
 
-export async function explore({
-  latitude = 0,
-  longitude = 0,
-  radius = 250,
-  section = "trending"
-}) {
+export const sections = [
+  "food",
+  "drinks",
+  "coffee",
+  "shops",
+  "arts",
+  "outdoors",
+  "sights",
+  "trending"
+];
+
+export function extractItemsOrderedByClosest({ groups = [] }) {
+  return []
+    .concat(...groups.map(g => g.items))
+    .sort((a, b) => a.venue.location.distance - b.venue.location.distance);
+}
+
+export async function explore({ latitude = 0, longitude = 0, ...rest }) {
   const params = {
-    limit: 10,
+    limit: 25,
     ll: `${latitude}, ${longitude}`,
-    radius,
-    section
+    ...rest
   };
   const searchParams = new URLSearchParams(params);
 
