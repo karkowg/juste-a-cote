@@ -9,7 +9,13 @@
           v-if="venue.location.address"
           class="text-base text-blue-darker"
         >
-          @ {{ venue.location.address }}
+          <a
+            href="#"
+            class="no-underline text-blue-dark"
+            @click.prevent="$emit('click', venue)"
+          >
+            @ {{ venue.location.address }}
+          </a>
         </p>
         <p
           v-else

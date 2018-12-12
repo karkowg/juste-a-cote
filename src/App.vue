@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>
-      <h1 class="font-sans text-center text-white py-6">
+      <h1 class="font-sans text-center text-white pt-6 pb-4">
         {{ name }}
       </h1>
     </header>

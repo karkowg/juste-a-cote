@@ -35,10 +35,10 @@ export function extractItemsOrderedByClosest({ groups = [] }) {
     .sort((a, b) => a.venue.location.distance - b.venue.location.distance);
 }
 
-export async function explore({ latitude = 0, longitude = 0, ...rest }) {
+export async function explore({ lat = 0, lng = 0, ...rest }) {
   const params = {
     limit: 25,
-    ll: `${latitude}, ${longitude}`,
+    ll: `${lat}, ${lng}`,
     ...rest
   };
   const searchParams = new URLSearchParams(params);

@@ -21,6 +21,7 @@
     "ky": "^0.5.1",
     "tailwindcss": "^0.7.2",
     "vue-carousel": "^0.16.1",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.17",
+    "vue2-leaflet": "^1.2.3-beta.4"
   }
 }
