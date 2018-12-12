@@ -1,0 +1,25 @@
+{
+  "name": "juste-a-cote",
+  "type": "static",
+  "static": {
+    "public": "dist",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "alias": "juste-a-cote",
+  "files": [
+    "dist"
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "VUE_APP_NAME": "Juste à côté",
+    "VUE_APP_FSQ_BASE_URI": "@juste-a-cote-fsq-base-uri",
+    "VUE_APP_FSQ_VERSION": "@juste-a-cote-fsq-version",
+    "VUE_APP_FSQ_CLIENT_ID": "@juste-a-cote-fsq-client-id",
+    "VUE_APP_FSQ_CLIENT_SECRET": "@juste-a-cote-fsq-client-secret"
+  }
+}
